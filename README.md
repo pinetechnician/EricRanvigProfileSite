@@ -1,0 +1,2 @@
+# EricRanvigProfileSite
+To anyone who is reading this, you are someone I trust to give me good advice in these early stages of learning programming. The composer is planning to use this website and I would appreciate any advice that will help to make this as useful as possible to him as well as any advice that will help me be able to craft more professional websites going forward!  For example, possibly accessibility considerations, which can be better as well as SEO.
