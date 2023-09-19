@@ -1,0 +1,194 @@
+/*My main focus was to make a style sheet that would work as a 
+template for the rest of the site - lmk if you think it is ok!*/
+
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: black;
+    color: linen;
+  }
+  
+  /*test code*/
+  @media (max-width: 768px) { /*adjusts sizes for mobile screens*/
+    body {
+      font-size: 4vmin;
+    }
+    
+  }
+
+  @media (min-width: 769px) {/*adjusts sizes for desktop screens*/
+    body {
+      font-size: 4vmin;
+    }
+  }
+  /*end test code*/
+
+  h1 {
+    color: linen;
+  }
+  
+  
+  p, 
+  li {
+    font-size: 18px;
+
+  }
+  
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /*The apron part/banner thing put this on in retroactively
+  when I decided to make the banner go in front - makes more sense 
+  I think*/
+  .front-page-wrapper{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    /*tried to center it this way based on chatgpt 
+    - tell me a better way if you know*/
+    transform: translate(-50%, 0); 
+    height: 21%;
+    width: 100%;
+    max-height: 150px;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .main-menu-container{
+    /*This is kinda repetitive, but lost the nerve to make more 
+    changes for now lol*/
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /*End Repetitive stuff*/
+    margin: 0 auto;
+    width: 94%;
+    height: 100%; /*originally 20% w/out wrapper*/
+    min-width: 1376px;
+    max-height: 150px;
+    overflow: hidden;
+  }
+
+  #main-logo{
+    text-transform: uppercase;
+    font-size: 26px; /*(note-to-self)vw express font as a function of viewport-width*/
+    font-weight: 700;
+    display: inline-block;
+    width: 30.1%;
+    height: 83%;
+    min-width: 113.176px;
+    clear: none;
+    text-align:center;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: linen;
+    transition: background-color 0.3s;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  #main-logo:hover{
+        background-color: silver;
+  }
+
+  #main-logo h1 {
+    position: relative;
+    bottom: 1%;
+  }
+
+  .main-menu{
+    overflow: hidden;
+    display: inline-block; /*originally block*/
+    float: right;
+    height: 100%;
+    width: 69.9%;
+    min-width: 262.824px;
+    clear:none;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 100%;
+    background-color: transparent;
+ }
+
+  .main-menu ul {
+    display: inline-block;
+    height: 83%;
+    width: 100%;
+    margin-top: 32px;
+    padding: 0px 0px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -77%);
+  }
+
+  .main-menu ul li{
+    display: inline-block;
+    width: 24%;
+    height: 100%;
+    position: relative;
+    font-size: x-large;
+    color: linen;
+    transition: background-color 0.3s;
+  }
+
+  .main-menu ul li:hover{
+    background-color: silver;
+    
+  }
+
+  .main-menu ul li a{
+    color: linen;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: inline-block;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+  }
+
+  h3.page-links {
+    position: relative;
+    font-size: 30px;
+    left: 50%;
+    transform: translate(-50%, 9.5%);
+    width: fit-content;
+  }
+  
+  .front-main-content{
+    position: relative;
+    /*is there a better way than trial and error by devtools? */
+    top: 142px; /*I thought % is better, but it works better with px*/
+    width: 100%;
+    min-width: 1376px;
+    overflow: hidden;
+  }
+
+  #front-main-image{
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 0;
+    width: 95%;
+  }
+
+  #front-main-image img{
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding-left: 0px;
+  }
+
+  
+
+ 
